@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.inputfocus-0.9.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.main.js"></script>
+
+	
+	<script type="text/javascript">
+function submitform()
+{
+  
+    
+	
+document.myform.action ="try.php";
+document.myform.submit();
+
+
+  
+  
+  
+
+  
+
+  
+  
+  
+  }
+</script>
+
+</head>
+<body>
+	
+	<div id="container">
+	
+        <form  name="myform" method="post"  >
+	
+            <!-- #first_step -->
+            <div id="first_step">
+                <h1>Sign Up for<span> <a href="homepage.html"> The Cipher Machine's </a></span> account</h1>
+
+                <div class="form">
+                    <input type="text" name="username" id="username" value="username" />
+                    <label for="username">At least 4 characters.The username should consist of first 4 letters as one of themes of the site, i.e. "The Cipher Machine".</label>
+                    
+                    <input type="password" name="password" id="password" value="password" />
+                    <label for="password">At least 4 characters. The username should consist of first 4 letters as one of themes of the site, i.e. "The Cipher Machine".</label>
+                    
+                    <input type="password" name="cpassword" id="cpassword" value="password" />
+                    <label for="cpassword">The two passwords you provided should match for continiuing with sign up process.</label>
+                </div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+				 <input class="submit" type="submit" name="submit_first" id="submit_first" value="" />
+				
+               
+			    
+
+				        </div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+                       
+            <!-- #second_step -->
+            <div id="second_step">
+                <h1>Sign Up for<span><a href="homepage.html"> The Cipher Machine's </a> </span> account.</h1>
+
+                <div class="form">
+                    <input type="text" name="firstname" id="firstname" value="first name" />
+                    <label for="firstname">Your First Name. </label>
+                    <input type="text" name="lastname" id="lastname" value="last name" />
+                    <label for="lastname">Your Last Name. </label>
+                    <input type="text" name="email" id="email" value="email address" />
+                    <label for="email">Your email address.</label>                    
+                </div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+				<input class="back" type="submit" name="back_second" id="back_second" value="" />
+                <input class="submit" type="submit" name="submit_second" id="submit_second" value="" />
+            </div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+
+
+            <!-- #third_step -->
+            <div id="third_step">
+                <h1>Sign Up for <span> <a href="homepage.html"> The Cipher Machine's </a> </span> account</h1>
+
+                <div class="form">
+                    <select id="age" name="age">
+                        <option> 1 - 17</option>
+                        <option>18 - 25</option>
+                        <option>26 - 40</option>
+                        <option>40+</option>
+                    </select>
+                    <label for="age">Your age range. </label> <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+
+                    <select id="gender" name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <label for="gender">Your Gender. </label> <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+                    
+                    <select id="country" name="country">
+                        <option>India</option>
+                        <option>United Kingdom</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>Italy</option>
+                    </select>
+                    <label for="country">Your country. </label> <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+                    
+                </div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+				<input class="back" type="submit" name="back_third" id="back_third" value="" />
+                <input class="submit" type="submit" name="submit_third" id="submit_third" value="" />
+                
+            </div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+            
+            
+            <!-- #fourth_step -->
+            <div id="fourth_step">
+                <h1>Sign Up for<span> <a href="homepage.html">The Cipher Machine's</a></span> account</h1>
+
+                <div class="form">
+                    <h2>Summary</h2>
+                    
+                    <table>
+                        <tr><td>Username</td><td></td></tr>
+                        <tr><td>Password</td><td></td></tr>
+                        <tr><td>Email</td><td></td></tr>
+                        <tr><td>Name</td><td></td></tr>
+                        <tr><td>Age</td><td></td></tr>
+                        <tr><td>Gender</td><td></td></tr>
+                        <tr><td>Country</td><td></td></tr>
+                    </table>
+                </div>      <!-- clearfix --><div class="clear"></div><!-- /clearfix -->
+			
+                
+				<input class="submit" type="submit"  value="d"  onclick="return submitform();"/>            
+            </div>
+            
+        </form>
+	</div>
+	<div id="progress_bar">
+        <div id="progress"></div>
+        <div id="progress_text">0% Complete</div>
+	</div>
+	<p id="daa">&nbsp;</p>
+	
+</body>
+</html>

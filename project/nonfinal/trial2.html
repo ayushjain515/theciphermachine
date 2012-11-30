@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div { background: white; }
+  .red { background: red; }
+  .green {background:#FFFF66;
+  font-size:36px;}
+  /*.red.green { background: green; }*/
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  
+ <div>This div should be white</div>
+ <div class="red">This div will be green because it now has the "green" class.
+   It would be red if the addClass function failed.</div>
+ <div>This div should be white</div>
+ <p>There are zero green divs</p>
+ <button onClick="hh()"> </button>
+
+<script>
+function hh()
+{
+  $("div").addClass(function(index, currentClass) {
+    var addedClass;
+
+    if ( currentClass === "red" ) {
+      addedClass = "green";
+      $("div").text("There is one green div");
+    }
+  
+    return addedClass;
+  });
+  }
+</script>
+
+</body>
+</html>

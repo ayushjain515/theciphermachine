@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .content { background:#00CC33;
+  border-bottom-width:thick; }
+ 
+  .green {background:#FFFF66;
+  font-size:36px;}
+  /*.red.green { background: green; }*/
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  
+ <div class="content"> mfkvjriof <span onclick="gg()"> more</span> </div>
+ 
+ 
+
+<script>
+function gg()
+{
+$("div").addClass(function(index, currentClass) {
+    var addedClass;
+
+    if ( currentClass =="content" ) {
+      addedClass = "green";
+      $("div").text("There is new contett");
+    }
+  
+    return addedClass;
+  });
+ } 
+</script>
+
+</body>
+</html>

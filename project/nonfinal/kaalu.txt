@@ -1,0 +1,32 @@
+<div id="featuredslideshow">
+                    <ul> 
+                        <li><img width="600" height="300" alt="photo one" src="images/slideshow/d.jpg" /></li> 
+                        <li><img width="600" height="300" alt="photo two" src="images/slideshow/e.jpg" /></li> 
+                        <li><img width="600" height="300" alt="photo three" src="images/slideshow/g.jpg" /></li> 
+                        <li><img width="600" height="300" alt="photo four" src="images/slideshow/h.jpg" /></li> 
+                        
+                        <li><img width="600" height="300" alt="photo four" src="images/slideshow/i.jpg" /></li> 
+                        <!-- eccetera --> 
+                    </ul> 
+                </div>
+
+<!-- ------------------------------------------SLIDE SHOW END-------------------------   -->            
+
+                <script type="text/javascript">
+                     $("div#featuredslideshow").slideViewerPro({ 
+                    thumbs: 4,  
+                    thumbsPercentReduction: 15, 
+                    galBorderWidth: 0, 
+                    galBorderColor: "WHITE", 
+                    thumbsTopMargin: 10, 
+                    thumbsRightMargin: 10, 
+                    thumbsBorderWidth: 1, 
+                    thumbsActiveBorderColor: "#000", 
+                    thumbsActiveBorderOpacity: 0.5, 
+                    thumbsBorderOpacity: 0, 
+                    buttonsTextColor: "#WHITE", 
+                    autoslide: true,  
+                    typo: true 
+                    });  	
+                </script>
+            </div>
